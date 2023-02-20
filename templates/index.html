@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+    {% block title %}
+    <title>Онлайн магазин</title>
+    {% endblock %}
+
+    {% block body %}
+    <div class="continer">
+        <h1>Онлайн магазин</h1>
+        <p>Quickly built sorry) </p>
+    </div>
+    <div class="container">
+        {% for el in data %}
+        <div class="card mb-4 shdow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">{{ el.title }}</h4>
+            </div>
+        <div class="card-body">
+            <h1 class="card-title pricing-card-title">{{ el.price }}<small class="text-mutted">золотых шеккелей</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>тут могло быть ваше что-то)</li>
+                <li>и тут могло быть ваше что-то)</li>  
+                <li>и тут могло быть ваше что-то)</li>  
+                <li>и даже тут могло быть ваше что-то)</li> 
+            </ul>
+            <a href="" class="btn btn-lg btn-block btn-outlonr-primary"> вы можете даже это купить</a>   
+        </div>  
+        </div>    
+        {% endfor %}
+    {% endblock %}
